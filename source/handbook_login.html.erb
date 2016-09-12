@@ -1,0 +1,35 @@
+---
+layout: none
+---
+
+<div class="container col-md-12 text-center">
+  A password is required to access the WFA Handbook.
+  <br>
+  <br>
+  <h2>Password</h2>
+  <br>
+  <form class="password-form text-center" onsubmit="return validate();">
+  <div>
+    <input type="password" class="form-control" id="pword" placeholder="">
+  </div>
+    <br>
+  <button type="submit" class="btn btn-black">Submit</button>
+</form>
+</div>
+
+
+
+<script type = "text/javascript">
+    function validate() {
+        var pw = document.getElementById("pword").value;
+        if (pw == "betterthanxxx") {
+            window.open("./handbook_data","_self");
+            return false;
+        } else {
+            alert("Invalid password.");
+            document.getElementById("pword").value = "";
+            document.getElementById("pword").focus();
+        }
+        return false;
+    }
+</script>
