@@ -20,12 +20,17 @@ a{
     text-decoration: none;
 }
 
+
+
 a:hover, a:focus{
     color: #626262;
     text-decoration: none;
     outline: 0;
 }
 
+.light{
+    color: #669EFF;
+}
 
 img {
     -moz-user-select: none;
